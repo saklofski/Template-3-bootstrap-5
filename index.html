@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Template 3 Bootstrap 5 </title>
+</head>
+<body>
+  
+  <!-- Start top bar -->
+  <div class="top-bar bg-light pt-2 pb-2 d-none d-lg-block">
+    <div class="container">
+      <div class="bloc d-flex justify-content-between align-items-center flex-wrap">
+        <div class="box1 d-flex">
+            <div class="email pe-4">
+              <i class="fa-solid fa-envelope"></i>
+              <span>hello@colorlib.com</span>
+            </div>
+            <div class="info ps-4">
+              <span>Free Shipping for all Order of $99</span>
+            </div>
+        </div>
+        <div class="box2 d-flex">
+          <div class="social pe-3">
+            <i class="fa-brands fa-facebook-f pe-3"></i>
+            <i class="fa-brands fa-twitter pe-3"></i>
+            <i class="fa-brands fa-linkedin-in pe-3"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+          </div>
+          <div class="langue ps-3 pe-3 position-relative d-inline-block">
+            <img src="images/language.png" alt="language">
+            <span>English</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="dropdown-content position-absolute pt-2 pb-2 pe-0 ps-2 fade-up">
+              <span class="d-block text-white">Spanis</span>
+              <span class="d-block text-white">English</span>
+            </div>
+          </div>
+          <div class="login ps-3">
+            <i class="fa-solid fa-user"></i> 
+            <span>Login</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End top bar -->
+
+  <!-- Start navbar -->
+  <nav class="navbar navbar-expand-lg bg-white flex-column">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.png" alt="logo"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link active pe-5" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-5" href="#shop">Shop</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle pe-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu text-capitalize bg-black position-absolute fade-upp">
+                <li><a class="dropdown-item" href="#shop-details">Shop Details</a></li>
+                <li><a class="dropdown-item" href="#shopping-cart">Shopping Cart</a></li>
+                <li><a class="dropdown-item" href="#check-out">Check Out</a></li>
+                <li><a class="dropdown-item" href="#blog-details">Blog Details</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-5" href="#blog">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="carts flex-grow-0" style="margin-top: 25px;">
+            <i class="fa-solid fa-heart"></i><sup class="sup text-white rounded-circle">1</sup>
+            <i class="fa-solid fa-cart-shopping ps-2"></i><sup class="sup text-white rounded-circle">3</sup>
+            <span class="ps-4">item:<strong>$150.00</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carts flex-grow-0 d-xs-block d-sm-block d-md-block d-lg-none pt-4">
+      <i class="fa-solid fa-heart"></i><sup class="sup text-white rounded-circle">1</sup>
+      <i class="fa-solid fa-cart-shopping ps-2"></i><sup class="sup text-white rounded-circle">3</sup>
+      <span class="ps-4">item:<strong>$150.00</strong></span>
+    </div>
+  </nav>
+  <!-- End navbar -->
+
+  <!-- Start Departement -->
+  <div class="departement pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="box1 pb-3">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fa-solid fa-bars pe-4"></i> All departments
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled">
+                      <li class="pb-3">Fresh Meat</li>
+                      <li class="pb-3">Vegetables</li>
+                      <li class="pb-3">Fruit & Nut Gifts</li>
+                      <li class="pb-3">Fresh Berries</li>
+                      <li class="pb-3">Ocean Foods</li>
+                      <li class="pb-3">Butter & Eggs</li>
+                      <li class="pb-3">FastFood</li>
+                      <li class="pb-3">Fresh Onion</li>
+                      <li class="pb-3">Papayaya & Crisps</li>
+                      <li class="pb-3" >Oatmeal</li>
+                      <li>Fresh Bananas</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="box2 pb-3 d-flex align-items-center">
+            <div class="input-group">
+              <div class="form-select" aria-label="Default select example">
+                <option selected>All Categories</option>
+              </div>
+              <input type="text" class="form-control" aria-label="Text input with 2 dropdown buttons">
+              <button type="button" class="btn btn-primary">Search</button>
+            </div>
+            <div class="nume d-flex align-items-center">
+              <div class="phone me-5 ms-5 p-3 bg-light rounded-circle">
+                <i class="fa-solid fa-phone ziw"></i>
+              </div>
+              <div class="numebr">
+                <span><strong>+65 11.188.888</strong></span>
+                <span>support 24/7 time</span>
+              </div>
+            </div>
+          </div>
+          <div class="photo img-fluid">
+            <div class="box-img">
+              <h2 class="text-uppercase">Fruit Fresh</h2>
+              <h1>Vegetable 100% Organic</h1>
+              <p class="text-secondary">Free Pickup and Delivery Available</p>
+              <button type="button" class="btn btn-primary text-uppercase">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Departement -->
+
+  <!-- Start Carousel -->
+  <div class="carousel pt-5">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item"><img src="images/categories/cat-1.jpg" alt=""></div>
+        <div class="item"><img src="images/categories/cat-2.jpg" alt=""></div>
+        <div class="item"><img src="images/categories/cat-3.jpg" alt=""></div>
+        <div class="item"><img src="images/categories/cat-4.jpg" alt=""></div>
+        <div class="item"><img src="images/categories/cat-5.jpg" alt=""></div>
+    </div>
+    </div>
+  </div>
+  <!-- End Carousel -->
+
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

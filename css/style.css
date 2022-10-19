@@ -1,0 +1,217 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+    height: 2000px;
+}
+
+/* Start top bar */
+.top-bar .bloc .box1 .email {
+    border-right: 1px solid #eee;
+}
+.top-bar .bloc .box2 .social {
+    border-right: 1px solid #eee;
+}
+.top-bar .bloc .box2 .langue {
+    border-right: 1px solid #eee;
+    cursor: pointer;
+}
+.top-bar .bloc .box2 .langue .dropdown-content {
+    display: none; 
+    background-color: black;
+    min-width: 105px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display:block; 
+    opacity: 0;
+    visibility: hidden; 
+    transition:.3s;
+    margin-top:0;
+}
+
+.top-bar .bloc .box2 .langue .dropdown-content.fade-up {
+    top: 180%;
+}
+
+.top-bar .bloc .box2 .langue:hover .dropdown-content {
+    display: block;
+    transition: .3s;
+    opacity:1;
+    visibility:visible;
+    top:100%;
+    transform: rotateX(0deg);
+}
+/* End top bar */
+
+/* Start navbar */
+.dropdown-toggle::after {
+    display: none;
+}
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #7fad39;
+}
+
+.navbar-nav .nav-link.active {
+    color: #7fad39;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+    min-width: 127px;
+    display: none; 
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display:block; 
+    opacity: 0;
+    visibility: hidden; 
+    transition:.3s;
+    margin-top:0;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu.fade-upp {
+    top: 180%;
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    transition: .3s;
+    opacity:1;
+    visibility:visible;
+    top:100%;
+    transform: rotateX(0deg);
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: -33px;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #7fad39;
+    background-color: transparent;
+}
+.start-100 {
+    left: 145%!important;
+}
+.badge {
+    padding: 6px;
+    line-height: 0.5;
+    background-color: #7fad39;
+}
+.carts sup {
+    background-color: #7fad39;
+    font-weight: bold;
+    padding: 0 5px 0 5px;
+    top: -12px;
+    left: -2px;
+}
+
+/* End navbar */
+
+/* Start Departement */
+.accordion {
+    --bs-accordion-border-radius: 0;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button {
+    background-color: #7fad39;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #7fad39;
+    box-shadow: none;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 0; 
+    border-bottom-left-radius: 0; 
+}
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(0deg); 
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-body ul li {
+    cursor: pointer;
+}
+
+.form-select {
+    border-radius: 0;
+}
+.btn {
+    --bs-btn-border-radius: 0;
+    background-color: #7fad39;
+    border: 1px solid #7fad39;
+    font-weight: bold;
+}
+.btn:first-child:hover, :not(.btn-check)+.btn:hover {
+    color: white;
+    background-color: #7fad39; 
+    border-color: #7fad39;
+}
+.input-group>.form-control, .input-group>.form-floating, .input-group>.form-select {
+    box-shadow: none;
+}
+.form-control:focus {
+     border-color: #dfd1d1;
+}
+  
+.departement .box2 .nume .phone .ziw {
+    color: #7fad39;
+}
+
+.departement .photo {
+    background-image: url(../images/hero/banner.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 458px;
+}
+.departement .photo .box-img{
+    max-width: 450px;
+    padding-top: 100px;
+    padding-left: 40px;
+}
+.departement .photo .box-img h2{
+   color: #7fad39;
+   font-weight: bold;
+}
+.departement .photo .box-img h1 {
+   color: black;
+   font-weight: bold;
+}
+
+/* End Departement */
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.owl-prev {
+  left: -2rem;
+}
+
+.owl-next {
+  right: -2rem;
+}
